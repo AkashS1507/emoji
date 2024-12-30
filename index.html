@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        button {
+            font-size: 10rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button>📬</button>
+    <h1>Click me</h1>
+    <!-- Js -->
+    <script>
+        let emoji = document.querySelector("button");
+        let h1 = document.querySelector("h1");
+
+        emoji.addEventListener("click", () => {
+            h1.innerHTML = "Placement";
+            emoji.innerHTML = "📭";
+        });
+    </script>
+</body>
+</html>
